@@ -16,6 +16,7 @@ namespace Snake_Game {
     let cmpCamera: ƒ.ComponentCamera = new ƒ.ComponentCamera();
 
     //let snakeGame: ƒ.Node;
+    // Test
 
   
     function hndLoad(_event: Event): void {
