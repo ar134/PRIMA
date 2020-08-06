@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+canvas {
+    flex-grow: 1;
+    background-color: magenta;
+}
+
+#buildingMenuSpace {
+
+    width: 280px;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    text-align: right;
+    top: 130px;
+    right: 0;
+}
+
+#buildingMenu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 138px;
+    height: 138px;
+    background-color: #000;
+    border: 1px solid black;
+}
+
+.button img {
+    width: 100%;
+}
+
+.button:hover img{
+    scale: 0.94;
+}
+
+.button:hover span {
+    visibility: visible;
+}
+
+
+#moneyCounter {
+    width: 280px;
+    background-color: rgb(34, 165, 56);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 0;
+    border: 1px solid black;
+}
+
+#resourceCounter {
+    width: 280px;
+    background-color: rgb(117, 116, 24);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 0;
+    color: rgb(238, 255, 0);
+    border: 1px solid black;
+}
+
+#baseHPCounter {
+    width: 280px;
+    background-color: rgb(83, 18, 18);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 0;
+    color: red;
+    border: 1px solid black;
+}
+
+/*
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+*/
+
+.tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    right: 300px;
+    /* z-index: 1; */
+}
+
+/*
+.tooltiptext:hover {
+    visibility: visible;
+}
+*/
+
+#tower_3, #tower_4, #resource_2, #science_2 {
+    background-color: #000;
+    opacity: 0.2;
+}
+
+/*
+.myImage {
+    opacity: 0.2;
+    filter: alpha(opacity=40);
+}
+*/
+
+/*
+.button {
+    opacity: 1;
+    filter: alpha(opacity=40);
+    background-color: #000;
+}
+*/
+
+/*
+img {
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(0.9);
+}
+*/
+#moneyValue {
+    color: rgb(30, 255, 0);
+}
+
+#gameOverMenu {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: black;
+    color: red;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: none;
+}
+
+#gameOverText {
+    width: 100%;
+}
+
+#score {
+    width: 100%;
+    color: lightblue;
+    padding: 50px 0;
+    font-size: 50px;
+}
+
+#restartButtonClass {
+    font-size: 40px;
+    color: black;
+    padding: 20px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#restartButton:hover {
+    scale: 0.9;
+}
+
+#restartButtonText {
+    background-color: red;
+    color: black;
+    padding: 20px;
+}
+
+#warningSystem {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 20px;
+}
+
+#warningText {
+    width: 500px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    position: relative;
+    font-size: 22px;
+    padding: 5px;
+    font-weight: bold;
+    left: -50%;
+    visibility: hidden;
+}
+
+.buildingCosts {
+    font-weight: bold;
+    color: yellow;
+}
+
+.towerStats {
+    font-weight: bold;
+    color: rgb(0, 247, 255);
+}

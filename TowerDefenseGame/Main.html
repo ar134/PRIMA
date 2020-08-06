@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense Game</title>
+    <script src="../FudgeCore.js"></script>
+    <script src="../FudgeAid.js"></script>
+    <script src="TowerDefense.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1 style="background-color: DarkSlateGray;">Tower Defense Game</h1>
+    <canvas></canvas>
+
+    <div id="warningSystem">
+        <div id="warningText">
+            <p>Warning!</p>
+        </div>
+    </div>
+
+    <div id="buildingMenuSpace">
+        <div id="buildingMenu">
+            <div id="baseHPCounter">
+                <p id="baseHPValue">20</p>
+            </div>
+
+            <div id="resourceCounter">
+                <p id="resourceValue">20</p>
+            </div>
+
+            <div id="moneyCounter">
+                <p id="moneyValue">0</p>
+            </div>
+
+            <div class="button" type="button" value="Click" id="button_build_tower_1">
+                <img src="img/Tower_1_V2.png" alt="">
+                <span class="tooltiptext">
+                    <b>Rapid Fire Tower [Q]</b><br><br>
+                    High firerate, low damage. Good to deal a lot of damage at short distance.<br><br>
+
+                    <p class="towerStats">
+                        Firerate: 10/s<br>
+                        Damage: 2<br>
+                        Range: 1.5<br><br>
+                    </p>
+
+                    <p class="buildingCosts">Cost: 100</p>
+                
+                </span>
+            </div>
+
+            <div class="button" type="button" value="Click" id="button_build_tower_2">
+                <span class="tooltiptext">
+                    <b>Double Cannon Tower [W]</b><br><br>
+                    Low firerate, high damage. Good to deal damage at long distance.<br><br>
+
+                    <p class="towerStats">
+                        Firerate: 0.5/s<br>
+                        Damage: 30<br>
+                        Range: 3<br><br>
+                    </p>
+
+                    <p class="buildingCosts">Cost: 100</p>
+
+                </span>
+                <img id="tower_2" src="img/Tower_2_V2.png" alt="">
+            </div>
+
+            <div class="button" type="button" value="Click" id="button_build_tower_3">
+                <span class="tooltiptext">
+                    <b>Acid Tower [E]</b><br><br>
+                    Average firerate. Attacks slow enemies by 50% and poison them. Poisoned enemies take 15 damage each second. Prioritizes enemies which are not poisoned.<br><br>
+
+                    <p class="towerStats">
+                        Firerate: 1/s<br>
+                        Damage: 0<br>
+                        Range: 4<br><br>
+                    </p>
+                    
+                    <p class="buildingCosts">Cost: 500</p>
+                
+                </span>
+                <img id="tower_3" src="img/Tower_3_V2.png" alt="">
+            </div>
+
+            <div class="button" type="button" value="Click" id="button_build_tower_4">
+                <span class="tooltiptext">
+                    <b>Gravity Tower [R]</b><br><br>
+                    Average firerate. Doesnt deal damage and teleports enemies back to the start of the path.<br><br>
+
+                    <p class="towerStats">
+                        Firerate: 1/s<br>
+                        Damage: 0<br>
+                        Range: 4<br><br>
+                    </p>
+                    
+                    <p class="buildingCosts">Cost: 1000</p>
+                
+                </span>
+                <img id="tower_4" src="img/Tower_4_V2.png" alt="">
+            </div>
+
+            <div class="button" type="button" value="Click" id="button_build_ressource_1">
+                <span class="tooltiptext">
+                    <b>Depot [A]</b><br><br>
+                    Collects 5 resources from a resource spot each second. Needs to be build near a resource spot.<br><br>
+
+                    <p class="buildingCosts">Cost: 200</p>
+                
+                </span>
+                <img src="img/Resource_1_V2.png" alt="">
+            </div>
+
+            <div class="button" type="button" value="Click" id="button_build_ressource_2">
+                <span class="tooltiptext">
+                    <b>Trading Center [S]</b><br><br>
+                    Generates 20 resources each second.<br><br>
+
+                    <p class="buildingCosts">Cost: 1000</p>
+                
+                </span>
+                <img id="resource_2" src="img/Resource_2_V2.png" alt="">
+            </div>
+
+            <div class="button" type="button" value="Click" id="button_build_science_1">
+                <span class="tooltiptext">
+                    <b>Research Center [D]</b><br><br>
+                    Unlocks Acid Tower and Future Tech Center.<br><br>
+
+                    <p class="buildingCosts">Cost: 500</p>
+                
+                </span>
+                <img src="img/Science_1_V2.png" alt="">
+            </div>
+
+            <div class="button" type="button" value="Click" id="button_build_science_2">
+                <span class="tooltiptext">
+                    <b>Future Tech Center [F]</b><br><br>
+                    Unlocks Gravity Tower and Trading Center.<br><br>
+
+                    <p class="buildingCosts">Cost: 1000</p>
+                
+                </span>
+                <img id="science_2" src="img/Science_2_V2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="gameOverMenu">
+        <div id="gameOverText">
+            <p>Game Over</p>
+        </div>
+        <div id="score">
+            <p>Score</p>
+        </div>
+        <div class="restartButtonClass" type="button" value="Click" id="restartButton">
+            <div id="restartButtonText">
+                <p>RESTART GAME</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
