@@ -1,8 +1,8 @@
 # PRIMA Abgabe
 
 [Gamedesigndokument](https://github.com/ar134/PRIMA/TowerDefenseGame/gamedesigndocument.md)<br />
-[Code](https://github.com/ar134/PRIMA/TowerDefenseGame)<br />
-[Archiv](https://github.com/ar134/PRIMA/TowerDefenseGame/PRIMA_Artur_Zich_Abgabe.zip)<br />
+[Code](https://github.com/ar134/PRIMA/tree/master/TowerDefenseGame)<br />
+[Archiv](https://github.com/ar134/PRIMA/blob/master/TowerDefenseGame/PRIMA_Artur_Zich_Abgabe.zip)<br />
 [Game](https://rawcdn.githack.com/ar134/PRIMA/e9920d0262dfc8867d640d02c99d9b2db9140649/TowerDefenseGame/Main.html)
 
 
